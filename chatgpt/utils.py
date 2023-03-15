@@ -13,6 +13,4 @@ def chatGPT_connect(token, query):
 def chatGPT_interact(token, query):
     # make a request to the chatGPT api
     response = chatGPT_connect(token, query)
-    # call the function again with the user's response
-    output = chatGPT_interact(token, response)
-    return output
+    return response
